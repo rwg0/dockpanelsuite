@@ -349,7 +349,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             set
             {
                 if (value <= 0)
-                    throw new ArgumentOutOfRangeException("value");
+                    value = 0;
 
                 if (value == m_dockBottomPortion)
                     return;
@@ -376,7 +376,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             set
             {
                 if (value <= 0)
-                    throw new ArgumentOutOfRangeException("value");
+                    value = 0;
 
                 if (value == m_dockLeftPortion)
                     return;
@@ -402,7 +402,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             set
             {
                 if (value <= 0)
-                    throw new ArgumentOutOfRangeException("value");
+                    value = 0;
 
                 if (value == m_dockRightPortion)
                     return;
@@ -428,7 +428,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             set
             {
                 if (value <= 0)
-                    throw new ArgumentOutOfRangeException("value");
+                    value = 0;
 
                 if (value == m_dockTopPortion)
                     return;
