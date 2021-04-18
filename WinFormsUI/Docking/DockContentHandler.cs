@@ -539,15 +539,16 @@ namespace WeifenLuo.WinFormsUI.Docking
             if (oldPane != null && !oldPane.IsDisposed && oldDockState == oldPane.DockState)
                 RefreshDockPane(oldPane);
 
-            if (Pane != null && DockState == Pane.DockState)
+            var pane = Pane;
+            if (pane != null && DockState == Pane.DockState)
             {
-                if ((Pane != oldPane) ||
-                    (Pane == oldPane && oldDockState != oldPane.DockState))
+                if ((pane != oldPane) ||
+                    (pane == oldPane && oldDockState != oldPane.DockState))
                 {
                     // Avoid early refresh of hidden AutoHide panes
-                    if ((Pane.DockWindow == null || Pane.DockWindow.Visible || Pane.IsHidden) && !Pane.IsAutoHide)
+                    if ((pane.DockWindow == null || pane.DockWindow.Visible || pane.IsHidden) && !pane.IsAutoHide)
                     {
-                        RefreshDockPane(Pane);
+                        RefreshDockPane(pane);
                     }
                 }
             }

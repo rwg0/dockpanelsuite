@@ -24,3 +24,5 @@ logs
 T4MVC.cs
 /SharpSnmpLib/sharpsnmplib.snk
 /packages
+/.vs/WinFormsUI.Docking/v16/Server/sqlite3/db.lock
+/.vs/WinFormsUI.Docking/v16/Server/sqlite3/storage.ide
